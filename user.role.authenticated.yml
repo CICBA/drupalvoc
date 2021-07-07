@@ -1,0 +1,17 @@
+uuid: 39a3ca03-9e1e-4d6b-8bba-1488c2a8f034
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'use text format filtered_html'
+  - 'view the administration theme'

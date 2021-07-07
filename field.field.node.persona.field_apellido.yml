@@ -1,0 +1,19 @@
+uuid: 0749049c-ffca-4f7d-b958-27751e0c0abf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_apellido
+    - node.type.persona
+id: node.persona.field_apellido
+field_name: field_apellido
+entity_type: node
+bundle: persona
+label: Apellido
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

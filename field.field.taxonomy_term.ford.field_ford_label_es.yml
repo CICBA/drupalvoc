@@ -1,0 +1,19 @@
+uuid: dbe15669-aaff-47b4-8a2e-3a1efa205f98
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_ford_label_es
+    - taxonomy.vocabulary.ford
+id: taxonomy_term.ford.field_ford_label_es
+field_name: field_ford_label_es
+entity_type: taxonomy_term
+bundle: ford
+label: "Etiqueta (es)\t"
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

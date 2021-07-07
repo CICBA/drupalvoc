@@ -1,0 +1,20 @@
+uuid: ee95739a-ef41-4464-a82e-e4444d76bbc4
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - paragraphs
+id: paragraph.field_institucion
+field_name: field_institucion
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

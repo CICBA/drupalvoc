@@ -1,0 +1,20 @@
+uuid: fcc13c4f-e175-4fc0-a91a-2d68fa3a5416
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_persona_id
+field_name: field_persona_id
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

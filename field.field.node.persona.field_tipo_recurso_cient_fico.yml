@@ -1,0 +1,26 @@
+uuid: 4224c82e-4b02-4f84-bd20-6d4e6daa5d1d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_recurso_cient_fico
+    - node.type.persona
+    - taxonomy.vocabulary.cic_tipo_recurso_cient_fico
+id: node.persona.field_tipo_recurso_cient_fico
+field_name: field_tipo_recurso_cient_fico
+entity_type: node
+bundle: persona
+label: 'Tipo Recurso Científico'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      cic_tipo_recurso_cient_fico: cic_tipo_recurso_cient_fico
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

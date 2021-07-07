@@ -1,0 +1,8 @@
+uuid: 0618018c-38a6-4777-a4d5-12293fc60b85
+langcode: es
+status: true
+dependencies: {  }
+name: 'CIC Tipo Recurso Científico'
+vid: cic_tipo_recurso_cient_fico
+description: ''
+weight: 0

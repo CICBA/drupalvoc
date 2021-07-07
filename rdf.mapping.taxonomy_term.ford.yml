@@ -1,0 +1,34 @@
+uuid: c25b7b59-9155-40bc-abd5-0bdf5ba953d7
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ford
+  module:
+    - taxonomy
+id: taxonomy_term.ford
+targetEntityType: taxonomy_term
+bundle: ford
+types:
+  - 'skos:Concept'
+  - 'cic:FORD'
+fieldMappings:
+  name:
+    properties:
+      - 'rdfs:label'
+      - 'skos:prefLabel'
+  description:
+    properties:
+      - 'skos:definition'
+  vid:
+    properties:
+      - 'skos:inScheme'
+    mapping_type: rel
+  parent:
+    properties:
+      - 'skos:broader'
+    mapping_type: rel
+  field_ford_uri:
+    properties:
+      - 'owl:sameAs'
+    mapping_type: property

@@ -1,0 +1,39 @@
+uuid: c0f23b8d-7237-449b-b8f9-989bef3fa3fb
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.persona.comment_node_persona
+    - field.field.node.persona.field_apellido
+    - field.field.node.persona.field_categor_a
+    - field.field.node.persona.field_cuil
+    - field.field.node.persona.field_dni
+    - field.field.node.persona.field_filiacion
+    - field.field.node.persona.field_mail
+    - field.field.node.persona.field_nombre
+    - field.field.node.persona.field_tipo_recurso_cient_fico
+    - node.type.persona
+  module:
+    - user
+id: node.persona.teaser
+targetEntityType: node
+bundle: persona
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_persona: true
+  field_apellido: true
+  field_categor_a: true
+  field_cuil: true
+  field_dni: true
+  field_filiacion: true
+  field_mail: true
+  field_nombre: true
+  field_tipo_recurso_cient_fico: true
+  langcode: true

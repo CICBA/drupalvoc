@@ -1,0 +1,10 @@
+uuid: 489c9626-955f-437a-9216-518d4b122d38
+langcode: es
+status: true
+dependencies: {  }
+id: filiacion
+label: Filiación
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

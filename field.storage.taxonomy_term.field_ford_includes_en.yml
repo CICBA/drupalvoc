@@ -1,0 +1,19 @@
+uuid: e74bc304-4d64-4195-a978-e3eca4e051f7
+langcode: und
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.field_ford_includes_en
+field_name: field_ford_includes_en
+entity_type: taxonomy_term
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

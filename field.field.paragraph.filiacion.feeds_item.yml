@@ -1,0 +1,23 @@
+uuid: 33f3b711-f21c-470e-935e-7fc60e4be98a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.feeds_item
+    - paragraphs.paragraphs_type.filiacion
+  module:
+    - feeds
+id: paragraph.filiacion.feeds_item
+field_name: feeds_item
+entity_type: paragraph
+bundle: filiacion
+label: 'Feeds item'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings: {  }
+field_type: feeds_item

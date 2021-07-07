@@ -1,0 +1,34 @@
+uuid: 565a1016-cb28-42ee-9422-175c909ef0a8
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.fos
+  module:
+    - taxonomy
+id: taxonomy_term.fos
+targetEntityType: taxonomy_term
+bundle: fos
+types:
+  - 'skos:Concept'
+  - 'cic:Materia'
+fieldMappings:
+  name:
+    properties:
+      - 'rdfs:label'
+      - 'skos:prefLabel'
+  description:
+    properties:
+      - 'skos:definition'
+  vid:
+    properties:
+      - 'skos:inScheme'
+    mapping_type: rel
+  parent:
+    properties:
+      - 'skos:broader'
+    mapping_type: rel
+  field_id:
+    properties:
+      - 'dc:identifier'
+    mapping_type: property

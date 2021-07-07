@@ -1,0 +1,8 @@
+uuid: 9c1f4667-a8e5-4937-bf9c-10b6febf8774
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_decs_term
+label: 'DeCS Term comment'
+target_entity_type_id: node
+description: null

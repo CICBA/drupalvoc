@@ -1,0 +1,20 @@
+uuid: 81851c26-4e25-4587-bf8d-f9bea15eaeec
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime
+    - paragraphs
+id: paragraph.field_fecha_fin
+field_name: field_fecha_fin
+entity_type: paragraph
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

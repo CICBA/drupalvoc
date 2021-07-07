@@ -1,0 +1,21 @@
+uuid: ee42e67b-074a-4e60-9bfe-a98925961070
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fecha_fin
+    - paragraphs.paragraphs_type.filiacion
+  module:
+    - datetime
+id: paragraph.filiacion.field_fecha_fin
+field_name: field_fecha_fin
+entity_type: paragraph
+bundle: filiacion
+label: 'Fecha de fin'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

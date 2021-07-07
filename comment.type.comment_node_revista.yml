@@ -1,0 +1,8 @@
+uuid: 35535a9d-bdc2-45ec-8af8-bdf3bbfe8c17
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_revista
+label: 'Revista comment'
+target_entity_type_id: node
+description: null

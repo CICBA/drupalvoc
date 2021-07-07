@@ -1,0 +1,8 @@
+uuid: 3e772175-3d88-4d9c-8044-6728428018f6
+langcode: es
+status: true
+dependencies: {  }
+name: 'CIC Categoría'
+vid: cic_categor_a
+description: ''
+weight: 0

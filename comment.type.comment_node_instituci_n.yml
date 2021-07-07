@@ -1,0 +1,8 @@
+uuid: 9aa9cb8f-4c77-4a76-9b71-928bf2f30207
+langcode: es
+status: true
+dependencies: {  }
+id: comment_node_instituci_n
+label: 'Institución comment'
+target_entity_type_id: node
+description: null

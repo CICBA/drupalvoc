@@ -1,0 +1,34 @@
+uuid: 79355dba-7849-47e0-a780-d9783da52db7
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.instituci_n.comment_node_instituci_n
+    - field.field.node.instituci_n.field_abreviatura
+    - field.field.node.instituci_n.field_padre
+    - node.type.instituci_n
+  module:
+    - user
+id: node.instituci_n.teaser
+targetEntityType: node
+bundle: instituci_n
+mode: teaser
+content:
+  field_abreviatura:
+    label: above
+    weight: 0
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_instituci_n: true
+  field_padre: true
+  langcode: true

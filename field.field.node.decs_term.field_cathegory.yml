@@ -1,0 +1,26 @@
+uuid: 27b4d7bc-ac49-42c3-b8a4-5950f93a50b6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cathegory
+    - node.type.decs_term
+    - taxonomy.vocabulary.decs_cathegories
+id: node.decs_term.field_cathegory
+field_name: field_cathegory
+entity_type: node
+bundle: decs_term
+label: cathegory
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      decs_cathegories: decs_cathegories
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

@@ -1,0 +1,59 @@
+uuid: f4c02195-b555-4e96-9fac-6a6dd67f8343
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.revista
+  module:
+    - node
+id: node.revista
+targetEntityType: node
+bundle: revista
+types:
+  - 'dc:BibliographicResource'
+fieldMappings:
+  created:
+    properties:
+      - 'dc:date'
+      - 'dc:created'
+    datatype: 'xsd:dateTime'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+  changed:
+    properties:
+      - 'dc:modified'
+    datatype: 'xsd:dateTime'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+  body:
+    properties:
+      - 'content:encoded'
+  uid:
+    properties:
+      - 'sioc:has_creator'
+    mapping_type: rel
+  name:
+    properties:
+      - 'foaf:name'
+  comment_count:
+    properties:
+      - 'sioc:num_replies'
+    datatype: 'xsd:integer'
+  last_activity:
+    properties:
+      - 'sioc:last_activity_date'
+    datatype: 'xsd:dateTime'
+    datatype_callback:
+      callable: 'Drupal\rdf\CommonDataConverter::dateIso8601Value'
+  title:
+    properties:
+      - 'dc:title'
+    mapping_type: property
+  field_id:
+    properties:
+      - 'dc:identifier'
+    mapping_type: property
+  field_issn:
+    properties:
+      - 'dc:alternative'
+    mapping_type: property

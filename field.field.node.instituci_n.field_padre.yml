@@ -1,0 +1,26 @@
+uuid: 6e20e93f-adde-4ff0-b127-93e2d3f9998c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_padre
+    - node.type.instituci_n
+id: node.instituci_n.field_padre
+field_name: field_padre
+entity_type: node
+bundle: instituci_n
+label: Padre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      instituci_n: instituci_n
+    sort:
+      field: _none
+      direction: ASC
+field_type: entity_reference

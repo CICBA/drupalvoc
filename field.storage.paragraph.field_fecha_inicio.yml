@@ -1,0 +1,20 @@
+uuid: 0578e5a2-16de-457a-962f-af1db883d4a4
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime
+    - paragraphs
+id: paragraph.field_fecha_inicio
+field_name: field_fecha_inicio
+entity_type: paragraph
+type: datetime
+settings:
+  datetime_type: datetime
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

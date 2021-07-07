@@ -1,0 +1,99 @@
+uuid: c76624c2-dc41-4892-8237-2118789ebbcf
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment_node_persona.default
+    - field.field.node.persona.comment_node_persona
+    - field.field.node.persona.field_apellido
+    - field.field.node.persona.field_categor_a
+    - field.field.node.persona.field_cuil
+    - field.field.node.persona.field_dni
+    - field.field.node.persona.field_filiacion
+    - field.field.node.persona.field_mail
+    - field.field.node.persona.field_nombre
+    - field.field.node.persona.field_tipo_recurso_cient_fico
+    - node.type.persona
+  module:
+    - comment
+    - entity_reference_revisions
+    - user
+id: node.persona.default
+targetEntityType: node
+bundle: persona
+mode: default
+content:
+  comment_node_persona:
+    label: hidden
+    type: comment_default
+    weight: 20
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    region: content
+  field_apellido:
+    label: above
+    weight: 0
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_categor_a:
+    label: above
+    weight: 6
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  field_dni:
+    label: above
+    weight: 2
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_filiacion:
+    type: entity_reference_revisions_entity_view
+    weight: 101
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_mail:
+    label: above
+    weight: 13
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_nombre:
+    label: above
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_tipo_recurso_cient_fico:
+    label: above
+    weight: 5
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_cuil: true
+  langcode: true

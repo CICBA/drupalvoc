@@ -1,0 +1,33 @@
+uuid: 1c36e1bb-60ba-45d4-86c6-0c9d2f9c728a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.comment_node_decs_term
+    - node.type.decs_term
+  module:
+    - comment
+id: node.decs_term.comment_node_decs_term
+field_name: comment_node_decs_term
+entity_type: node
+bundle: decs_term
+label: Comments
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    status: 2
+    cid: 0
+    last_comment_timestamp: 0
+    last_comment_name: null
+    last_comment_uid: 0
+    comment_count: 0
+default_value_callback: ''
+settings:
+  default_mode: 1
+  per_page: 50
+  anonymous: 0
+  form_location: false
+  preview: 1
+field_type: comment

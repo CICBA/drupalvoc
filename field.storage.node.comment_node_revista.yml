@@ -1,0 +1,20 @@
+uuid: 9600a936-1631-49e5-9f6c-b5058363c77f
+langcode: es
+status: true
+dependencies:
+  module:
+    - comment
+    - node
+id: node.comment_node_revista
+field_name: comment_node_revista
+entity_type: node
+type: comment
+settings:
+  comment_type: comment_node_revista
+module: comment
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

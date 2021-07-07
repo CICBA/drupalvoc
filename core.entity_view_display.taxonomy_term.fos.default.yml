@@ -1,0 +1,31 @@
+uuid: 57e8712b-cb6e-447d-905b-c89032d151f4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.fos.field_id
+    - taxonomy.vocabulary.fos
+  module:
+    - text
+id: taxonomy_term.fos.default
+targetEntityType: taxonomy_term
+bundle: fos
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_id:
+    label: above
+    weight: 0
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

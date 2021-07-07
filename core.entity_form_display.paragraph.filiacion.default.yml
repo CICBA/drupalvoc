@@ -1,0 +1,60 @@
+uuid: 76160df4-43f0-4d12-a19e-9897e73d0000
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.filiacion.feeds_item
+    - field.field.paragraph.filiacion.field_fecha_fin
+    - field.field.paragraph.filiacion.field_fecha_inicio
+    - field.field.paragraph.filiacion.field_institucion
+    - field.field.paragraph.filiacion.field_persona_id
+    - field.field.paragraph.filiacion.field_rol
+    - paragraphs.paragraphs_type.filiacion
+  module:
+    - datetime
+id: paragraph.filiacion.default
+targetEntityType: paragraph
+bundle: filiacion
+mode: default
+content:
+  field_fecha_fin:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_fecha_inicio:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_institucion:
+    weight: 0
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_persona_id:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_rol:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  feeds_item: true
+  status: true

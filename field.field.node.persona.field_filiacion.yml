@@ -1,0 +1,31 @@
+uuid: e581433b-71a8-4b90-aeaa-38c306a49881
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_filiacion
+    - node.type.persona
+    - paragraphs.paragraphs_type.filiacion
+  module:
+    - entity_reference_revisions
+id: node.persona.field_filiacion
+field_name: field_filiacion
+entity_type: node
+bundle: persona
+label: Filiación
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      filiacion: filiacion
+    target_bundles_drag_drop:
+      filiacion:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

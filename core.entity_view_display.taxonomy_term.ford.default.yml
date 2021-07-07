@@ -1,0 +1,118 @@
+uuid: e20eeca4-5b13-4845-ad00-b4177ad9aed2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.ford.field_ford_digit_level
+    - field.field.taxonomy_term.ford.field_ford_includes_en
+    - field.field.taxonomy_term.ford.field_ford_includes_es
+    - field.field.taxonomy_term.ford.field_ford_includes_pt
+    - field.field.taxonomy_term.ford.field_ford_label_en
+    - field.field.taxonomy_term.ford.field_ford_label_es
+    - field.field.taxonomy_term.ford.field_ford_label_pt
+    - field.field.taxonomy_term.ford.field_ford_notes_en
+    - field.field.taxonomy_term.ford.field_ford_notes_es
+    - field.field.taxonomy_term.ford.field_ford_notes_pt
+    - field.field.taxonomy_term.ford.field_ford_uri
+    - taxonomy.vocabulary.ford
+  module:
+    - text
+id: taxonomy_term.ford.default
+targetEntityType: taxonomy_term
+bundle: ford
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ford_digit_level:
+    label: above
+    weight: 10
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_ford_includes_en:
+    label: above
+    weight: 8
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ford_includes_es:
+    label: above
+    weight: 7
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ford_includes_pt:
+    label: above
+    weight: 9
+    type: basic_string
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_ford_label_en:
+    label: above
+    weight: 2
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_ford_label_es:
+    label: above
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_ford_label_pt:
+    label: above
+    weight: 3
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_ford_notes_en:
+    label: above
+    weight: 5
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_ford_notes_es:
+    label: above
+    weight: 4
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_ford_notes_pt:
+    label: above
+    weight: 6
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_ford_uri:
+    label: above
+    weight: 0
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

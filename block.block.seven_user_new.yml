@@ -1,0 +1,24 @@
+uuid: 73f34d02-054a-405c-992a-5883fbf8df7f
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.who_s_new
+  module:
+    - views
+  theme:
+    - seven
+id: seven_user_new
+theme: seven
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:who_s_new-block_1'
+settings:
+  id: 'views_block:who_s_new-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '5'
+visibility: {  }

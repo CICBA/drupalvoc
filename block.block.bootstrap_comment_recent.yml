@@ -1,0 +1,24 @@
+uuid: 5faf1968-6376-4fa4-8d69-7b335023e931
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.comments_recent
+  module:
+    - views
+  theme:
+    - bartik
+id: bootstrap_comment_recent
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:comments_recent-block_1'
+settings:
+  id: 'views_block:comments_recent-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

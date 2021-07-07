@@ -1,0 +1,29 @@
+uuid: ea54d0c0-464c-484f-b135-e2a45d3bd4fa
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_institucion
+    - node.type.instituci_n
+    - paragraphs.paragraphs_type.filiacion
+id: paragraph.filiacion.field_institucion
+field_name: field_institucion
+entity_type: paragraph
+bundle: filiacion
+label: institución
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      instituci_n: instituci_n
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

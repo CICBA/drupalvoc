@@ -1,0 +1,26 @@
+uuid: d94aa6fb-c9e9-4e04-b439-afc153e1ac66
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categor_a
+    - node.type.persona
+    - taxonomy.vocabulary.cic_categor_a
+id: node.persona.field_categor_a
+field_name: field_categor_a
+entity_type: node
+bundle: persona
+label: Categoría
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler_settings:
+    sort:
+      field: _none
+    target_bundles:
+      cic_categor_a: cic_categor_a
+  handler: 'default:taxonomy_term'
+field_type: entity_reference

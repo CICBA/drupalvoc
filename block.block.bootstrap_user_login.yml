@@ -1,0 +1,20 @@
+uuid: 386d76af-10f9-4519-ad57-b7cb3f1d046f
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - bartik
+id: bootstrap_user_login
+theme: bartik
+region: content
+weight: -8
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  provider: user
+  label_display: '0'
+visibility: {  }

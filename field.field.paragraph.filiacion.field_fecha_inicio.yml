@@ -1,0 +1,21 @@
+uuid: 32dd94ad-8225-4b75-a181-e71f00868671
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fecha_inicio
+    - paragraphs.paragraphs_type.filiacion
+  module:
+    - datetime
+id: paragraph.filiacion.field_fecha_inicio
+field_name: field_fecha_inicio
+entity_type: paragraph
+bundle: filiacion
+label: 'Fecha de inicio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

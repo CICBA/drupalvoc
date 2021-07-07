@@ -1,0 +1,8 @@
+uuid: 5bb71453-237e-4a33-bc65-da1a7bdbf4f6
+langcode: es
+status: true
+dependencies: {  }
+name: 'DeCS Cathegories'
+vid: decs_cathegories
+description: ''
+weight: 0

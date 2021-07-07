@@ -1,0 +1,28 @@
+uuid: 93372bdc-33ee-4d2b-bd8f-ef6446a6bd3d
+langcode: es
+status: true
+dependencies:
+  config:
+    - comment.type.comment_node_revista
+    - field.field.comment.comment_node_revista.comment_body
+  module:
+    - text
+id: comment.comment_node_revista.default
+targetEntityType: comment
+bundle: comment_node_revista
+mode: default
+content:
+  comment_body:
+    label: hidden
+    weight: 0
+    type: text_default
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

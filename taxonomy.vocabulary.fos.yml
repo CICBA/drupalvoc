@@ -1,0 +1,8 @@
+uuid: cd6014bd-5d7d-46fa-879d-75b160b09516
+langcode: es
+status: true
+dependencies: {  }
+name: FOS
+vid: fos
+description: 'Fields of Science'
+weight: 0

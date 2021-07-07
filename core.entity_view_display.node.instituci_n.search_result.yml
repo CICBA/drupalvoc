@@ -1,0 +1,41 @@
+uuid: dea23109-7ef6-4e11-bce5-4535588c3e5e
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.instituci_n.comment_node_instituci_n
+    - field.field.node.instituci_n.field_abreviatura
+    - field.field.node.instituci_n.field_padre
+    - node.type.instituci_n
+  module:
+    - user
+id: node.instituci_n.search_result
+targetEntityType: node
+bundle: instituci_n
+mode: search_result
+content:
+  field_abreviatura:
+    label: inline
+    weight: 1
+    type: string
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    region: content
+  field_padre:
+    label: above
+    weight: 2
+    type: entity_reference_label
+    settings:
+      link: false
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  comment_node_instituci_n: true
+  langcode: true
