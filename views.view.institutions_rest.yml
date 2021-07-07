@@ -615,8 +615,9 @@ display:
       display_extenders: {  }
       path: institutions
       pager:
-        type: none
+        type: some
         options:
+          items_per_page: 40
           offset: 0
       style:
         type: serializer
