@@ -3,7 +3,6 @@ langcode: es
 status: true
 dependencies:
   config:
-    - core.entity_view_display.comment.comment_node_persona.default
     - field.field.node.persona.comment_node_persona
     - field.field.node.persona.field_apellido
     - field.field.node.persona.field_categor_a
@@ -15,7 +14,6 @@ dependencies:
     - field.field.node.persona.field_tipo_recurso_cient_fico
     - node.type.persona
   module:
-    - comment
     - entity_reference_revisions
     - user
 id: node.persona.default
@@ -23,15 +21,6 @@ targetEntityType: node
 bundle: persona
 mode: default
 content:
-  comment_node_persona:
-    label: hidden
-    type: comment_default
-    weight: 20
-    settings:
-      view_mode: default
-      pager_id: 0
-    third_party_settings: {  }
-    region: content
   field_apellido:
     label: above
     weight: 0
@@ -42,12 +31,20 @@ content:
     region: content
   field_categor_a:
     label: above
-    weight: 6
+    weight: 4
     type: entity_reference_label
     settings:
       link: true
     third_party_settings: {  }
     region: content
+  field_cuil:
+    type: string
+    weight: 8
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_dni:
     label: above
     weight: 2
@@ -58,7 +55,7 @@ content:
     region: content
   field_filiacion:
     type: entity_reference_revisions_entity_view
-    weight: 101
+    weight: 7
     label: above
     settings:
       view_mode: default
@@ -67,7 +64,7 @@ content:
     region: content
   field_mail:
     label: above
-    weight: 13
+    weight: 5
     type: string
     settings:
       link_to_entity: false
@@ -83,17 +80,17 @@ content:
     region: content
   field_tipo_recurso_cient_fico:
     label: above
-    weight: 5
+    weight: 3
     type: entity_reference_label
     settings:
       link: true
     third_party_settings: {  }
     region: content
   links:
-    weight: 100
+    weight: 6
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
-  field_cuil: true
+  comment_node_persona: true
   langcode: true

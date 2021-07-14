@@ -395,7 +395,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: subjects
+      path: fos
       pager:
         type: some
         options:
