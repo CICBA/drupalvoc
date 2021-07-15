@@ -153,8 +153,8 @@ display:
           label: ''
           exclude: false
           alter:
-            alter_text: false
-            text: ''
+            alter_text: true
+            text: '({{ field_abreviatura }})'
             make_link: false
             path: ''
             absolute: false
@@ -214,7 +214,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -280,7 +280,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: '{{ field_padre.nid  }}'
@@ -342,7 +342,7 @@ display:
           group_type: group
           admin_label: auth_key
           label: auth_key
-          exclude: false
+          exclude: true
           alter:
             alter_text: true
             text: 'http://digital.cic.gba.gob.ar/auth/node/{{nid}}'
@@ -427,40 +427,32 @@ display:
             operator_limit_selection: false
             operator_list: {  }
           group: 1
-        nid:
-          id: nid
+        title:
+          id: title
           table: node_field_data
-          field: nid
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
-          group: 1
-          exposed: true
+          operator: starts
+          value: ''
+          group: 2
+          exposed: false
           expose:
-            operator_id: nid_op
-            label: ID
+            operator_id: ''
+            label: ''
             description: ''
             use_operator: false
-            operator: nid_op
+            operator: ''
             operator_limit_selection: false
             operator_list: {  }
-            identifier: auth_key
+            identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              editor: '0'
             placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -474,36 +466,33 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           entity_type: node
-          entity_field: nid
-          plugin_id: numeric
-        combine:
-          id: combine
-          table: views
-          field: combine
+          entity_field: title
+          plugin_id: string
+        field_abreviatura_value:
+          id: field_abreviatura_value
+          table: node__field_abreviatura
+          field: field_abreviatura_value
           relationship: none
           group_type: group
           admin_label: ''
-          operator: contains
+          operator: starts
           value: ''
-          group: 1
-          exposed: true
+          group: 2
+          exposed: false
           expose:
-            operator_id: combine_op
-            label: 'Combinar los campos de filtro'
+            operator_id: ''
+            label: ''
             description: ''
             use_operator: false
-            operator: combine_op
+            operator: ''
             operator_limit_selection: false
             operator_list: {  }
-            identifier: title
+            identifier: ''
             required: false
             remember: false
             multiple: false
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              editor: '0'
             placeholder: ''
           is_grouped: false
           group_info:
@@ -517,57 +506,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          fields:
-            title: title
-            field_abreviatura: field_abreviatura
-          plugin_id: combine
-        field_padre_target_id:
-          id: field_padre_target_id
-          table: node__field_padre
-          field: field_padre_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
-          group: 1
-          exposed: true
-          expose:
-            operator_id: field_padre_target_id_op
-            label: 'Padre (field_padre)'
-            description: ''
-            use_operator: false
-            operator: field_padre_target_id_op
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: father_id
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
-              editor: '0'
-            placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-          plugin_id: numeric
+          plugin_id: string
       sorts:
         title:
           id: title
@@ -593,14 +532,49 @@ display:
         operator: AND
         groups:
           1: AND
+          2: OR
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
         - request_format
-        - url
         - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_abreviatura'
+        - 'config:field.storage.node.field_padre'
+  entity_reference_1:
+    display_plugin: entity_reference
+    id: entity_reference_1
+    display_title: 'Referencia a entidades'
+    position: 2
+    display_options:
+      display_extenders: {  }
+      style:
+        type: entity_reference
+        options:
+          search_fields:
+            title: title
+            field_abreviatura: field_abreviatura
+            nid: '0'
+            field_padre: '0'
+            nid_1: '0'
+      row:
+        type: entity_reference
+        options:
+          default_field_elements: true
+          inline:
+            title: title
+            field_abreviatura: field_abreviatura
+          separator: ' '
+          hide_empty: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -649,7 +623,6 @@ display:
         - 'languages:language_content'
         - 'languages:language_interface'
         - request_format
-        - url
         - 'user.node_grants:view'
         - user.permissions
       tags:
