@@ -3,9 +3,9 @@ name: 'CIC Authorities'
 mail: pablo.cda@gmail.com
 slogan: ''
 page:
-  403: /
-  404: /
-  front: /buscador-de-personas
+  403: ''
+  404: ''
+  front: /node
 admin_compact_mode: false
 weight_select_max: 100
 langcode: es
