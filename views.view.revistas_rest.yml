@@ -123,7 +123,7 @@ display:
           element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
-          element_default_classes: true
+          element_default_classes: false
           empty: ''
           hide_empty: false
           empty_zero: false
@@ -131,7 +131,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -570,10 +570,7 @@ display:
           field_options:
             title:
               alias: ''
-              raw_output: false
-            comment_node_revista:
-              alias: ''
-              raw_output: false
+              raw_output: true
             field_eissn:
               alias: ''
               raw_output: false
