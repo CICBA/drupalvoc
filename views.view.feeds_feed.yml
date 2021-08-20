@@ -1,4 +1,4 @@
-uuid: dfa56a2f-92db-452b-a774-0b131581c7d6
+uuid: c9d5d450-00fc-48cd-a9a0-ee06a57b60df
 langcode: es
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
 _core:
   default_config_hash: qEFCGJZmfPO8q5G05QiqwLQcMxrQ7PaLQMmF3nt3iMY
 id: feeds_feed
-label: Feeds
+label: 'Canales de noticias'
 module: views
 description: ''
 tag: ''
@@ -187,7 +187,7 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          action_title: 'With selection'
+          action_title: 'Con selección'
           include_exclude: exclude
           selected_actions: {  }
           entity_type: feeds_feed
@@ -461,7 +461,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Imported
+          label: Importado
           exclude: false
           alter:
             alter_text: false
@@ -672,7 +672,7 @@ display:
           entity_type: feeds_feed
           entity_field: changed
           plugin_id: date
-      title: Feeds
+      title: 'Canales de noticias'
       header: {  }
       footer: {  }
       empty:
@@ -723,7 +723,7 @@ display:
       path: admin/content/feed
       menu:
         type: normal
-        title: Feeds
+        title: 'Canales de noticias'
         description: ''
         expanded: false
         parent: system.admin_content

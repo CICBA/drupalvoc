@@ -1,4 +1,4 @@
-uuid: 9cda81cd-34c3-469c-b23d-2c1cc05322da
+uuid: 01ff4e1a-60d8-4b87-8c5b-c02465fb1d41
 langcode: es
 status: true
 dependencies:
@@ -72,8 +72,8 @@ content:
     type: entity_reference_paragraphs
     weight: 121
     settings:
-      title: Paragraph
-      title_plural: Paragraphs
+      title: Párrafo
+      title_plural: Parráfos
       edit_mode: open
       add_mode: dropdown
       form_display_mode: default

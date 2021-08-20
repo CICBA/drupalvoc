@@ -1,4 +1,4 @@
-uuid: 57b83c80-2f99-4dcc-bc31-eaacb2b54b8a
+uuid: 6639ba13-499a-4b0a-b6b3-ab720130f024
 langcode: es
 status: true
 dependencies:
@@ -17,7 +17,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Máster
+    display_title: Master
     position: 0
     display_options:
       access:
@@ -38,10 +38,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Aplicar
+          submit_button: Apply
           reset_button: false
-          reset_button_label: Restablecer
-          exposed_sorts_label: 'Ordenar por'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc

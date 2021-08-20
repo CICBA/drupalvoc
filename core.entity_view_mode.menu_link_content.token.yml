@@ -1,10 +1,10 @@
-uuid: 5f93b67c-dd44-4ce2-be91-ec48948cf302
+uuid: 21bf11d7-220d-4db1-ab7f-fbbcc2e3d66d
 langcode: es
 status: true
 dependencies:
   module:
     - menu_link_content
 id: menu_link_content.token
-label: Token
+label: Comodín
 targetEntityType: menu_link_content
 cache: true

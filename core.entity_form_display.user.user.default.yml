@@ -1,4 +1,4 @@
-uuid: 03e9e07a-0b0f-42b0-8a6d-23d6173a4c2c
+uuid: 69ee5064-6be5-4bd4-a394-a0258c062db1
 langcode: es
 status: true
 dependencies:
@@ -28,12 +28,12 @@ content:
     weight: 6
     region: content
   user_picture:
+    type: image_image
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
-    type: image_image
-    weight: 7
     third_party_settings: {  }
+    weight: -1
     region: content
 hidden:
   langcode: true

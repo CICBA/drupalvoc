@@ -1,10 +1,10 @@
-uuid: 4ef51120-4e39-4dbe-b592-1861c71a6559
+uuid: 808e07b2-d234-4783-b23e-a971df73ad70
 langcode: es
 status: true
 dependencies:
   module:
     - feeds
 id: feeds_subscription.token
-label: Token
+label: Comodín
 targetEntityType: feeds_subscription
 cache: true

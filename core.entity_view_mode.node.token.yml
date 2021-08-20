@@ -1,10 +1,10 @@
-uuid: 10749a73-56dc-4498-b113-b1b6eb35683b
+uuid: 1043766d-a42b-4822-b377-591be7f98e28
 langcode: es
 status: true
 dependencies:
   module:
     - node
 id: node.token
-label: Token
+label: Comodín
 targetEntityType: node
 cache: true

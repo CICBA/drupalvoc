@@ -1,4 +1,4 @@
-uuid: 6586f021-7f83-4a59-9dd5-474c54b2a9fa
+uuid: 5efa9647-23a9-4356-a3c4-7d2c105dbda1
 langcode: es
 status: true
 dependencies:
@@ -18,7 +18,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Máster
+    display_title: Master
     position: 0
     display_options:
       access:
@@ -41,8 +41,8 @@ display:
         options:
           submit_button: Filtro
           reset_button: true
-          reset_button_label: Restablecer
-          exposed_sorts_label: 'Ordenar por'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: false
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -55,12 +55,12 @@ display:
           total_pages: null
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementos por página'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Todo -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Desplazamiento
+            offset_label: Offset
           tags:
             previous: ‹‹
             next: ››
@@ -299,7 +299,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Tipo
+          label: Type
           exclude: false
           alter:
             alter_text: false
@@ -515,7 +515,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operaciones
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -571,7 +571,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: Tipo
+            label: Type
             description: ''
             use_operator: false
             operator: type_op
@@ -663,10 +663,10 @@ display:
           field: area_text_custom
           relationship: none
           group_type: group
-          admin_label: 'No hay mensajes disponibles.'
+          admin_label: 'No hay mensajes de registro disponibles.'
           empty: true
           tokenize: false
-          content: 'No hay mensajes disponibles.'
+          content: 'No hay mensajes de registro disponibles.'
           plugin_id: text_custom
       relationships:
         uid:
@@ -697,7 +697,7 @@ display:
   page:
     display_plugin: page
     id: page
-    display_title: Página
+    display_title: Page
     position: 1
     display_options:
       display_extenders: {  }

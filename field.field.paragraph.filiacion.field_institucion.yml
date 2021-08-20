@@ -1,4 +1,4 @@
-uuid: ea54d0c0-464c-484f-b135-e2a45d3bd4fa
+uuid: 802ffad7-5633-41a5-bf4d-b23896d42a1c
 langcode: es
 status: true
 dependencies:
@@ -9,7 +9,7 @@ id: paragraph.filiacion.field_institucion
 field_name: field_institucion
 entity_type: paragraph
 bundle: filiacion
-label: institución
+label: Institución
 description: ''
 required: false
 translatable: false

@@ -1,4 +1,4 @@
-uuid: e34ed716-ca3d-43b9-9dea-04ad07132860
+uuid: 0a18fa3d-af49-4706-91ef-d01fe73ee254
 langcode: es
 status: true
 dependencies:
@@ -18,7 +18,7 @@ bundle: filiacion
 mode: default
 content:
   field_fecha_fin:
-    weight: 3
+    weight: 1
     label: above
     settings:
       format_type: medium
@@ -27,7 +27,7 @@ content:
     type: datetime_default
     region: content
   field_fecha_inicio:
-    weight: 2
+    weight: 0
     label: above
     settings:
       format_type: medium
@@ -36,7 +36,7 @@ content:
     type: datetime_default
     region: content
   field_institucion:
-    weight: 0
+    weight: 3
     label: above
     settings:
       link: true
@@ -53,7 +53,7 @@ content:
     type: number_integer
     region: content
   field_rol:
-    weight: 1
+    weight: 2
     label: above
     settings:
       link_to_entity: false

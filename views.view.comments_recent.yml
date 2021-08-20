@@ -1,4 +1,4 @@
-uuid: 319017f5-928c-49e9-8ff8-b66d17159529
+uuid: e911df00-ea49-4b80-9544-930add8c11bf
 langcode: es
 status: true
 dependencies:
@@ -19,7 +19,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Máster
+    display_title: Master
     position: 0
     display_options:
       access:

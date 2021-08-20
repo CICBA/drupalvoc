@@ -1,4 +1,4 @@
-uuid: 2866c942-52e4-4002-b2f0-fa62e2371c8f
+uuid: 9a1b86f7-fbe7-48b6-a426-b5ed9d4b1884
 langcode: es
 status: true
 dependencies:
@@ -14,7 +14,7 @@ provider: null
 plugin: local_tasks_block
 settings:
   id: local_tasks_block
-  label: Tabs
+  label: Pestañas
   provider: core
   label_display: '0'
   primary: true

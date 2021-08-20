@@ -1,4 +1,4 @@
-uuid: 76160df4-43f0-4d12-a19e-9897e73d0000
+uuid: ecf6ab5a-7286-403e-9414-d596e5f59ac7
 langcode: es
 status: true
 dependencies:
@@ -18,19 +18,19 @@ bundle: filiacion
 mode: default
 content:
   field_fecha_fin:
-    weight: 3
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_fecha_inicio:
-    weight: 2
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
     region: content
   field_institucion:
-    weight: 0
+    weight: 3
     settings:
       match_operator: CONTAINS
       match_limit: 10
@@ -47,7 +47,7 @@ content:
     type: number
     region: content
   field_rol:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''

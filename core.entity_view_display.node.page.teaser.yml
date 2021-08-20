@@ -1,4 +1,4 @@
-uuid: a8473862-e255-4006-b7c5-62c1a4bb03f9
+uuid: 4cc38aaa-ff3a-44ce-b9e6-3f01a75c943f
 langcode: es
 status: true
 dependencies:
@@ -19,12 +19,12 @@ mode: teaser
 content:
   body:
     label: hidden
-    weight: 0
     type: text_summary_or_trimmed
+    weight: 100
+    region: content
     settings:
       trim_length: 600
     third_party_settings: {  }
-    region: content
   links:
     weight: 101
     region: content

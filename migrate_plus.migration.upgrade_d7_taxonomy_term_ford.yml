@@ -1,0 +1,138 @@
+uuid: ca80e04b-4220-4f29-a853-86b90200efca
+langcode: es
+status: true
+dependencies: {  }
+id: upgrade_d7_taxonomy_term_ford
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Taxonomy terms (FORD)'
+source:
+  plugin: d7_taxonomy_term
+  bundle: ford
+process:
+  tid:
+    -
+      plugin: get
+      source: tid
+  vid:
+    -
+      plugin: migration_lookup
+      migration: upgrade_d7_taxonomy_vocabulary
+      source: vid
+  name:
+    -
+      plugin: get
+      source: name
+  description/value:
+    -
+      plugin: get
+      source: description
+  description/format:
+    -
+      plugin: get
+      source: format
+  weight:
+    -
+      plugin: get
+      source: weight
+  parent_id:
+    -
+      plugin: skip_on_empty
+      method: process
+      source: parent
+    -
+      plugin: migration_lookup
+      migration:
+        - upgrade_d7_taxonomy_term_ford
+        - upgrade_d7_taxonomy_term_fos
+        - upgrade_d7_taxonomy_term_cic_categor_a
+        - upgrade_d7_taxonomy_term_cic_tipo_recurso_cient_fico
+        - upgrade_d7_taxonomy_term_decs_cathegories
+        - upgrade_d7_taxonomy_term_tags
+  parent:
+    -
+      plugin: default_value
+      default_value: 0
+      source: '@parent_id'
+  forum_container:
+    -
+      plugin: get
+      source: is_container
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  langcode:
+    -
+      plugin: get
+      source: language
+  field_ford_uri:
+    -
+      plugin: get
+      source: field_ford_uri
+  field_ford_label_es:
+    -
+      plugin: get
+      source: field_ford_label_es
+  field_ford_label_en:
+    -
+      plugin: get
+      source: field_ford_label_en
+  field_ford_label_pt:
+    -
+      plugin: get
+      source: field_ford_label_pt
+  field_ford_notes_es:
+    -
+      plugin: get
+      source: field_ford_notes_es
+  field_ford_notes_en:
+    -
+      plugin: get
+      source: field_ford_notes_en
+  field_ford_notes_pt:
+    -
+      plugin: get
+      source: field_ford_notes_pt
+  field_ford_includes_es:
+    -
+      plugin: get
+      source: field_ford_includes_es
+  field_ford_includes_en:
+    -
+      plugin: get
+      source: field_ford_includes_en
+  field_ford_includes_pt:
+    -
+      plugin: get
+      source: field_ford_includes_pt
+  field_ford_digit_level:
+    -
+      plugin: get
+      source: field_ford_digit_level
+destination:
+  plugin: 'entity:taxonomy_term'
+  default_bundle: ford
+migration_dependencies:
+  required:
+    - upgrade_d7_taxonomy_vocabulary
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_taxonomy_vocabulary
+    - upgrade_d7_taxonomy_term_tags
+    - upgrade_d7_taxonomy_term_decs_cathegories
+    - upgrade_d7_taxonomy_term_cic_tipo_recurso_cient_fico
+    - upgrade_d7_taxonomy_term_cic_categor_a
+    - upgrade_d7_taxonomy_term_fos
+    - upgrade_d7_taxonomy_term_ford
+    - upgrade_d7_taxonomy_term_ford
+    - upgrade_d7_taxonomy_term_fos
+    - upgrade_d7_taxonomy_term_cic_categor_a
+    - upgrade_d7_taxonomy_term_cic_tipo_recurso_cient_fico
+    - upgrade_d7_taxonomy_term_decs_cathegories
+    - upgrade_d7_taxonomy_term_tags

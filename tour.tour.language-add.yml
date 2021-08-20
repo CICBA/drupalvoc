@@ -1,4 +1,4 @@
-uuid: 31eedf15-6a90-447c-97f2-86bc2a4abb7b
+uuid: 03ef2e86-641d-4ecd-85e5-6600ddcd90da
 langcode: es
 status: true
 dependencies:
@@ -25,7 +25,8 @@ tips:
     label: 'Seleccionar idioma'
     body: '<p>Elija un idioma de la lista, o elija “Idioma personalizado…” al final de la lista.</p><p>Haga clic en el botón “Agregar idioma” cuando termine de elegir su idioma.</p><p>Cuando agregue un idioma personalizado, obtendrá un formulario adicional donde podrá proporcionar el nombre, código y dirección del idioma.</p>'
     weight: 2
-    selector: '#edit-predefined-langcode'
+    attributes:
+      data-id: edit-predefined-langcode
   language-add-continue:
     id: language-add-continue
     plugin: text

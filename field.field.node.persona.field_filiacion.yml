@@ -1,11 +1,10 @@
-uuid: e581433b-71a8-4b90-aeaa-38c306a49881
+uuid: 1c08d22f-e8d3-4a41-ac7e-5c4a454885e7
 langcode: es
 status: true
 dependencies:
   config:
     - field.storage.node.field_filiacion
     - node.type.persona
-    - paragraphs.paragraphs_type.filiacion
   module:
     - entity_reference_revisions
 id: node.persona.field_filiacion
@@ -22,10 +21,9 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     negate: 0
-    target_bundles:
-      filiacion: filiacion
+    target_bundles: null
     target_bundles_drag_drop:
       filiacion:
-        enabled: true
         weight: 2
+        enabled: false
 field_type: entity_reference_revisions

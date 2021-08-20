@@ -1,8 +1,8 @@
-uuid: 5283b483-143f-43d3-a78e-54d8e201c27b
+uuid: 5562773b-8034-4aa0-8452-11aedfe25f56
 langcode: es
 status: true
 dependencies: {  }
 _core:
   default_config_hash: U5VlGjd_SfV0Qm_EfnaynOfc549cNscFAx48JfYoMRI
 id: default
-label: Predeterminado
+label: Master

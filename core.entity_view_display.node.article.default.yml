@@ -1,4 +1,4 @@
-uuid: d3b2b661-0cd4-4f88-9756-49513f8a8443
+uuid: 53545a44-df8e-4064-99c7-434aa3f9f636
 langcode: es
 status: true
 dependencies:
@@ -24,12 +24,12 @@ bundle: article
 mode: default
 content:
   body:
-    label: hidden
-    weight: 0
     type: text_default
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
+    label: hidden
   comment:
     type: comment_default
     weight: 110
@@ -49,22 +49,22 @@ content:
     third_party_settings: {  }
     region: content
   field_image:
-    label: hidden
-    weight: -1
     type: image
+    weight: -1
+    region: content
     settings:
       image_style: large
       image_link: ''
     third_party_settings: {  }
-    region: content
+    label: hidden
   field_tags:
-    label: above
-    weight: 10
     type: entity_reference_label
+    weight: 10
+    region: content
+    label: above
     settings:
       link: true
     third_party_settings: {  }
-    region: content
   links:
     weight: 100
     region: content

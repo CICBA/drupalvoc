@@ -1,4 +1,4 @@
-uuid: 3e6582d7-4cb2-493a-ac4f-51d6cbd403b1
+uuid: eed506f5-1791-431b-a0fc-abbbcf7275e6
 langcode: es
 status: true
 dependencies:
@@ -23,8 +23,8 @@ visibility:
   user_role:
     id: user_role
     roles:
-      anonymous: anonymous
-      authenticated: authenticated
+      1: '1'
+      2: '2'
     context_mapping:
       user: '@user.current_user_context:current_user'
     negate: false

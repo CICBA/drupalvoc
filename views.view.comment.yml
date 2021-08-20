@@ -1,4 +1,4 @@
-uuid: fef07245-741e-4019-b63f-23fafc7b5d62
+uuid: 40bf5ded-a972-4c87-9e0a-e9acab619ad8
 langcode: es
 status: true
 dependencies:
@@ -18,7 +18,7 @@ display:
   default:
     display_plugin: default
     id: default
-    display_title: Máster
+    display_title: Master
     position: 0
     display_options:
       access:
@@ -39,10 +39,10 @@ display:
       exposed_form:
         type: basic
         options:
-          submit_button: Aplicar
+          submit_button: Filtro
           reset_button: false
-          reset_button_label: Restablecer
-          exposed_sorts_label: 'Ordenar por'
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -54,18 +54,18 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: '‹ anterior'
-            next: 'siguiente ›'
-            first: '« primero'
-            last: 'último »'
+            previous: '‹ previous'
+            next: 'next ›'
+            first: '« first'
+            last: 'last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Elementos por página'
+            items_per_page_label: 'Items per page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- Todo -'
+            items_per_page_options_all_label: '- All -'
             offset: false
-            offset_label: Desplazamiento
+            offset_label: Offset
           quantity: 9
       style:
         type: table
@@ -323,7 +323,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Autor
+          label: Author
           exclude: false
           alter:
             alter_text: false
@@ -452,7 +452,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Actualizado
+          label: Updated
           exclude: false
           alter:
             alter_text: false
@@ -519,7 +519,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operaciones
+          label: Operations
           exclude: false
           alter:
             alter_text: false
@@ -1276,7 +1276,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Autor
+          label: Author
           exclude: false
           alter:
             alter_text: false
@@ -1405,7 +1405,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Actualizado
+          label: Updated
           exclude: false
           alter:
             alter_text: false
@@ -1472,7 +1472,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          label: Operaciones
+          label: Operations
           exclude: false
           alter:
             alter_text: false

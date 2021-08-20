@@ -1,11 +1,11 @@
-uuid: 6c47bbe1-f02c-4c34-9f01-51914cfea576
+uuid: 65fc9869-be97-4d5e-bb01-018ceef6be5b
 name: 'CIC Authorities'
 mail: pablo.cda@gmail.com
 slogan: ''
 page:
-  403: ''
-  404: ''
-  front: /node
+  403: /
+  404: /
+  front: /buscador-de-personas
 admin_compact_mode: false
 weight_select_max: 100
 langcode: es

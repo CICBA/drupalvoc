@@ -1,4 +1,4 @@
-uuid: 3090fcfb-a4d2-4be2-a6e1-afeffe0ec00a
+uuid: 8c4ec580-0676-466b-9f71-fe91f22b49bd
 langcode: es
 status: true
 dependencies:
@@ -14,8 +14,8 @@ mode: default
 content:
   comment_body:
     label: hidden
-    weight: 0
     type: text_default
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     region: content

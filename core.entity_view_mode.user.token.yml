@@ -1,10 +1,10 @@
-uuid: 9a16afb9-18b5-4c40-a508-28722edf6e6a
+uuid: f2b4bedc-2350-4214-aa1e-855408796608
 langcode: es
 status: true
 dependencies:
   module:
     - user
 id: user.token
-label: Token
+label: Comodín
 targetEntityType: user
 cache: true

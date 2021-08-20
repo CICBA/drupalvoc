@@ -1,4 +1,4 @@
-uuid: 958bfde6-54ba-40ae-b2e9-0ad04fa5e3b3
+uuid: c03d78de-b244-4286-a988-0111588dc3c1
 langcode: es
 status: true
 dependencies:
@@ -18,7 +18,7 @@ provider: null
 plugin: 'system_menu_block:footer'
 settings:
   id: 'system_menu_block:footer'
-  label: 'Footer menu'
+  label: 'Menú del pie'
   provider: system
   label_display: '0'
   level: 1

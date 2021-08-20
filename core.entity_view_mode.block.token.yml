@@ -1,10 +1,10 @@
-uuid: c2bd0a82-8ed6-4341-941a-fd244e6ebdaf
+uuid: 343a1390-79a0-4b91-99f3-867e3e5fb1fa
 langcode: es
 status: true
 dependencies:
   module:
     - block
 id: block.token
-label: Token
+label: Comodín
 targetEntityType: block
 cache: true

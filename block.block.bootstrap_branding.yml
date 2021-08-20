@@ -1,4 +1,4 @@
-uuid: ad329efd-aa3a-41dc-a90a-0d5eb24426d6
+uuid: 4ddaf56d-ddc6-400a-9826-d91b1118654a
 langcode: es
 status: true
 dependencies:
@@ -16,7 +16,7 @@ provider: null
 plugin: system_branding_block
 settings:
   id: system_branding_block
-  label: 'Site branding'
+  label: 'Marca del sitio'
   provider: system
   label_display: '0'
   use_site_logo: true
