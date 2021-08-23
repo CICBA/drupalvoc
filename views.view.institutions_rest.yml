@@ -10,7 +10,6 @@ dependencies:
     - node
     - rest
     - serialization
-    - user
 id: institutions_rest
 label: 'Institutions REST'
 module: views
@@ -26,9 +25,8 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
-        options:
-          perm: 'access content'
+        type: none
+        options: {  }
       cache:
         type: tag
         options: {  }
@@ -602,7 +600,6 @@ display:
         - url
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
       tags:
         - 'config:field.storage.node.field_abreviatura'
         - 'config:field.storage.node.field_padre'
@@ -651,7 +648,6 @@ display:
         - request_format
         - url
         - 'user.node_grants:view'
-        - user.permissions
       tags:
         - 'config:field.storage.node.field_abreviatura'
         - 'config:field.storage.node.field_padre'

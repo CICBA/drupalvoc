@@ -10,6 +10,7 @@ weight: 1
 is_admin: false
 permissions:
   - 'access comments'
+  - 'access content'
   - 'post comments'
   - 'skip comment approval'
   - 'use text format filtered_html'
