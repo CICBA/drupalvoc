@@ -7,7 +7,6 @@ dependencies:
     - field.field.paragraph.filiacion.field_fecha_fin
     - field.field.paragraph.filiacion.field_fecha_inicio
     - field.field.paragraph.filiacion.field_institucion
-    - field.field.paragraph.filiacion.field_persona_id
     - field.field.paragraph.filiacion.field_rol
     - paragraphs.paragraphs_type.filiacion
   module:
@@ -38,13 +37,6 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-    region: content
-  field_persona_id:
-    weight: 4
-    settings:
-      placeholder: ''
-    third_party_settings: {  }
-    type: number
     region: content
   field_rol:
     weight: 2

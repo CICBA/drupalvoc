@@ -1,0 +1,19 @@
+uuid: 40e78756-ca61-4f18-b102-de4deeca0006
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_orcid
+    - node.type.persona
+id: node.persona.field_orcid
+field_name: field_orcid
+entity_type: node
+bundle: persona
+label: ORCID
+description: 'Ingresar los 16 dígitos separados por guión, sin el resto de la URL. Ejemplo: 0000-0001-2345-6789'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

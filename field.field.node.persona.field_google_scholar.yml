@@ -1,0 +1,19 @@
+uuid: d536090c-e867-45e5-9678-ba957e50ddaf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_google_scholar
+    - node.type.persona
+id: node.persona.field_google_scholar
+field_name: field_google_scholar
+entity_type: node
+bundle: persona
+label: 'Google Scholar'
+description: 'Ingresar URL completa del perfil de Google Scholar'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

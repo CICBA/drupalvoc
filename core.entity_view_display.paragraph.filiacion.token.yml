@@ -1,0 +1,30 @@
+uuid: 3b38e269-9b69-49ab-8540-bf4a6bf2b357
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.token
+    - field.field.paragraph.filiacion.feeds_item
+    - field.field.paragraph.filiacion.field_fecha_fin
+    - field.field.paragraph.filiacion.field_fecha_inicio
+    - field.field.paragraph.filiacion.field_institucion
+    - field.field.paragraph.filiacion.field_rol
+    - paragraphs.paragraphs_type.filiacion
+id: paragraph.filiacion.token
+targetEntityType: paragraph
+bundle: filiacion
+mode: token
+content:
+  field_institucion:
+    weight: 0
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  feeds_item: true
+  field_fecha_fin: true
+  field_fecha_inicio: true
+  field_rol: true

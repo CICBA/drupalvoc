@@ -9,8 +9,11 @@ dependencies:
     - field.field.node.persona.field_cuil
     - field.field.node.persona.field_dni
     - field.field.node.persona.field_filiacion
+    - field.field.node.persona.field_google_scholar
     - field.field.node.persona.field_mail
     - field.field.node.persona.field_nombre
+    - field.field.node.persona.field_orcid
+    - field.field.node.persona.field_researchgate
     - field.field.node.persona.field_tipo_recurso_cient_fico
     - node.type.persona
   module:
@@ -80,6 +83,14 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
+  field_google_scholar:
+    weight: 122
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_mail:
     weight: 4
     type: string_textfield
@@ -95,6 +106,22 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
+  field_orcid:
+    weight: 123
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_researchgate:
+    weight: 124
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
     region: content
   field_tipo_recurso_cient_fico:
     weight: 7

@@ -6,7 +6,6 @@ dependencies:
     - field.field.paragraph.filiacion.field_fecha_fin
     - field.field.paragraph.filiacion.field_fecha_inicio
     - field.field.paragraph.filiacion.field_institucion
-    - field.field.paragraph.filiacion.field_persona_id
     - paragraphs.paragraphs_type.filiacion
   module:
     - paragraphs
@@ -76,10 +75,3 @@ mappings:
       language: ''
       reference_by: nid
       autocreate: 0
-  -
-    target: field_persona_id
-    map:
-      value: persona
-    unique: {  }
-    settings:
-      language: null

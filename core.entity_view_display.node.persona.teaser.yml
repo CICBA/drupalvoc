@@ -1,0 +1,64 @@
+uuid: 74e2b3ea-a8f3-4c21-9fcf-956d868a6c24
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.persona.comment_node_persona
+    - field.field.node.persona.field_apellido
+    - field.field.node.persona.field_categor_a
+    - field.field.node.persona.field_cuil
+    - field.field.node.persona.field_dni
+    - field.field.node.persona.field_filiacion
+    - field.field.node.persona.field_google_scholar
+    - field.field.node.persona.field_mail
+    - field.field.node.persona.field_nombre
+    - field.field.node.persona.field_orcid
+    - field.field.node.persona.field_researchgate
+    - field.field.node.persona.field_tipo_recurso_cient_fico
+    - node.type.persona
+  module:
+    - entity_reference_revisions
+    - user
+id: node.persona.teaser
+targetEntityType: node
+bundle: persona
+mode: teaser
+content:
+  field_apellido:
+    type: string
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_filiacion:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: above
+    settings:
+      view_mode: token
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_nombre:
+    type: string
+    weight: 0
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  comment_node_persona: true
+  field_categor_a: true
+  field_cuil: true
+  field_dni: true
+  field_google_scholar: true
+  field_mail: true
+  field_orcid: true
+  field_researchgate: true
+  field_tipo_recurso_cient_fico: true
+  langcode: true
+  links: true

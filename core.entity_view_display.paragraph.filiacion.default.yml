@@ -7,7 +7,6 @@ dependencies:
     - field.field.paragraph.filiacion.field_fecha_fin
     - field.field.paragraph.filiacion.field_fecha_inicio
     - field.field.paragraph.filiacion.field_institucion
-    - field.field.paragraph.filiacion.field_persona_id
     - field.field.paragraph.filiacion.field_rol
     - paragraphs.paragraphs_type.filiacion
   module:
@@ -53,4 +52,3 @@ content:
     region: content
 hidden:
   feeds_item: true
-  field_persona_id: true

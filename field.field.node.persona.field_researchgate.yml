@@ -1,0 +1,19 @@
+uuid: d2d966ee-46bf-4aea-ab50-20a0ef808ab2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_researchgate
+    - node.type.persona
+id: node.persona.field_researchgate
+field_name: field_researchgate
+entity_type: node
+bundle: persona
+label: ResearchGate
+description: 'Ingresar URL completa del perfil de ResearchGate'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
