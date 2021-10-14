@@ -3,6 +3,7 @@ langcode: es
 status: true
 dependencies:
   config:
+    - field.storage.taxonomy_term.field_ford_uri
     - taxonomy.vocabulary.ford
   module:
     - rest
@@ -140,18 +141,18 @@ display:
           entity_type: taxonomy_term
           entity_field: name
           plugin_id: term_name
-        tid:
-          id: tid
-          table: taxonomy_term_field_revision
-          field: tid
+        field_ford_uri:
+          id: field_ford_uri
+          table: taxonomy_term__field_ford_uri
+          field: field_ford_uri
           relationship: none
           group_type: group
           admin_label: ''
           label: ''
           exclude: false
           alter:
-            alter_text: true
-            text: 'http://digital.cic.gba.gob.ar/auth/taxonomy/term/{{ tid }}'
+            alter_text: false
+            text: ''
             make_link: false
             path: ''
             absolute: false
@@ -189,10 +190,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: number_integer
+          type: string
           settings:
-            thousand_separator: ''
-            prefix_suffix: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -203,8 +203,6 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: taxonomy_term
-          entity_field: tid
           plugin_id: field
       filters:
         status:
@@ -276,26 +274,23 @@ display:
           entity_type: taxonomy_term
           entity_field: name
           plugin_id: string
-        tid:
-          id: tid
-          table: taxonomy_term_field_revision
-          field: tid
+        field_ford_uri_value:
+          id: field_ford_uri_value
+          table: taxonomy_term__field_ford_uri
+          field: field_ford_uri_value
           relationship: none
           group_type: group
           admin_label: ''
           operator: '='
-          value:
-            min: ''
-            max: ''
-            value: ''
+          value: ''
           group: 1
           exposed: true
           expose:
-            operator_id: tid_op
-            label: 'ID del término'
+            operator_id: field_ford_uri_value_op
+            label: 'URI (field_ford_uri)'
             description: ''
             use_operator: false
-            operator: tid_op
+            operator: field_ford_uri_value_op
             operator_limit_selection: false
             operator_list: {  }
             identifier: auth_key
@@ -308,8 +303,6 @@ display:
               administrator: '0'
               editor: '0'
             placeholder: ''
-            min_placeholder: ''
-            max_placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -322,9 +315,7 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-          entity_type: taxonomy_term
-          entity_field: tid
-          plugin_id: numeric
+          plugin_id: string
       sorts:
         name:
           id: name
@@ -333,7 +324,7 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          order: DESC
+          order: ASC
           exposed: false
           expose:
             label: ''
@@ -354,7 +345,8 @@ display:
         - request_format
         - url
         - url.query_args
-      tags: {  }
+      tags:
+        - 'config:field.storage.taxonomy_term.field_ford_uri'
   rest_export_1:
     display_plugin: rest_export
     id: rest_export_1
@@ -381,6 +373,9 @@ display:
               alias: title
               raw_output: false
             tid:
+              alias: ''
+              raw_output: false
+            field_ford_uri:
               alias: auth_key
               raw_output: false
     cache_metadata:
@@ -390,4 +385,5 @@ display:
         - 'languages:language_interface'
         - request_format
         - url
-      tags: {  }
+      tags:
+        - 'config:field.storage.taxonomy_term.field_ford_uri'
